@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_search">
+
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.cs3270final.mycookbook.ui.search.SearchFragment"
+        android:label="@string/recipeViews"
+        tools:layout="@layout/fragment_search" >
+
+        <action
+            android:id="@+id/action_navigation_home_to_view_fragment"
+            app:destination="@id/navigation_view_fragment" />
+        <action
+            android:id="@+id/action_navigation_search_to_navigation_add"
+            app:destination="@id/navigation_form" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_form"
+        android:name="com.cs3270final.mycookbook.ui.form.FormFragment"
+        android:label="@string/title_add_recipe"
+        tools:layout="@layout/fragment_form" />
+
+    <fragment
+        android:id="@+id/navigation_shopping_list"
+        android:name="com.cs3270final.mycookbook.ui.shoppinglist.ShoppingListFragment"
+        android:label="@string/title_shopping_list"
+        tools:layout="@layout/fragment_shopping_list" />
+
+    <fragment
+        android:id="@+id/navigation_view_fragment"
+        android:name="com.cs3270final.mycookbook.ui.view.ViewFragment"
+        android:label="@string/view_recipe_label"
+        tools:layout="@layout/fragment_view">
+
+        <argument
+            android:name="recipeId"
+            app:argType="integer" />
+
+    </fragment>
+
+</navigation>

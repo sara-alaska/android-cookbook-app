@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="units">
+        <item>@string/form_ingredient_option_unit_cups</item>
+        <item>@string/form_ingredient_option_unit_grams</item>
+        <item>@string/form_ingredient_option_unit_half</item>
+        <item>@string/form_ingredient_option_unit_tablespoons</item>
+        <item>@string/form_ingredient_option_unit_teaspoons</item>
+        <item>@string/form_ingredient_option_unit_whole</item>
+    </string-array>
+    <string-array name="sort_options">
+        <item>@string/sort_option_oldest_first</item>
+        <item>@string/sort_option_newest_first</item>
+        <item>@string/sort_option_name_desc</item>
+        <item>@string/sort_option_name_asc</item>
+    </string-array>
+</resources>
